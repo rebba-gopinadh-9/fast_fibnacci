@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<math.h>
-long long int fib(long k){
+long long int fib(long int k){
     if (k==1 || k==2){
         return 1;
     }else if (k%2 ==0){
