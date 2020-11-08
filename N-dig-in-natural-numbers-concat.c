@@ -5,8 +5,10 @@ int dig(int i,int r,int p){
     if (r==0){
         return i%10;
     }else {
-        i=i+1;
-        return (i %((int) pow(10,p)));
+        i++;
+        i=i/((int)(pow(10,p)));
+        i=i%10;
+        return i;
     }
 }
 int main(){
